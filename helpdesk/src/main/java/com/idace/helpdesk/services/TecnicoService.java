@@ -49,7 +49,7 @@ public class TecnicoService {
         Tecnico oldTecnico = findById(id);
 
         if(!tecnicoDTO.getSenha().equals(oldTecnico.getSenha())){
-            tecnicoDTO.setSenha(encoder.encode(tecnicoDTO.getSenha()));
+            tecnicoDTO.setSenha(encoder.encode(oldTecnico.getSenha()));
         }
 
         validaPorCpfEmail(tecnicoDTO);

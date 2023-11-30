@@ -1,7 +1,10 @@
 <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
+        
         <img src="assets/img/side-image.svg" alt="Imagem de navegação">
-        <h2>HELP DESK - IDACE</h2>
+        <hr>
+        <h2>&nbsp;&nbsp;HELP DESK - IDACE</h2>
+        <hr>
         <mat-nav-list class="nav-list">
             <a mat-list-item routerLink="home">
                 <i class="material-icons">home</i>
@@ -19,10 +22,10 @@
                 <i class="material-icons">support</i>
                 Chamados
             </a>
-            <a mat-list-item href="https://gitlab.com/MarcosAlbano/helpdesk-front" target="_blank">
+            <!-- <a mat-list-item href="https://gitlab.com/MarcosAlbano/helpdesk-front" target="_blank">
                 <i class="material-icons">code</i>
                 GitLab
-            </a>
+            </a> -->
             <a mat-list-item (click)="logout()">
                 <i class="material-icons">logout</i>
                 Logout

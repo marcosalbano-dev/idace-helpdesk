@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class ClienteDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     protected Integer id;
     @NotNull(message = "O campo NOME é requerido")
     protected String nome;
