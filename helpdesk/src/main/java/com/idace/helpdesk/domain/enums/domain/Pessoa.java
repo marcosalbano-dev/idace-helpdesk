@@ -14,6 +14,8 @@ import java.util.stream.Collectors;
 
 @Entity
 public abstract class Pessoa implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //O banco gera o id automaticamente.
     protected Integer id;

@@ -8,6 +8,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class ChamadoDTO implements Serializable {
+    private static final long serialVersionUID = 1L;
     private Integer id;
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataAbertura = LocalDate.now();
